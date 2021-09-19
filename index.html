@@ -6,10 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas| Cursos Practico de javascript</title>
+    <link rel="stylesheet" href="style.css/style.css">
 </head>
 
 <body>
-    <h1>FIGURAS GEOMETRICAS</h1>
+    <header class="header">
+        <div class="header_logo">
+            <span class="header_logo-1">GEO<span class="header_logo-2">metrica</span></span>
+        </div>
+        <h1 class="header_titulo">
+            PERIMETROS Y AREAS
+        </h1>
+        <nav class="header_opciones">
+            <ul class="header_opciones--nav">
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#">OPCIONES</a></li>
+                <li><a href="#">LEER MAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <section class="figuras">
+            <div class="figuras_opciones">
+                <div class="figuras_opciones-datos">
+                    <h2>Calcula el area y perimetro de un cuadrado</h2>
+                    <form action="" class="figuras_opciones-datos--formulario">
+                        <label for="inputCuadrado">Escribe cuanto mide cada lado de tu caudrado</label>
+                        <input type="number" name="" id="inputCuadrado" class="figuras_opciones-datos--input">
+                        <div class="figuras_opciones-datos--button">
+                            <button type="button" id="perimetro">
+                            Calcular el périmetro
+                            </button>
+                            <button type="button" id="area">
+                            Calcular el área
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="figuras">
+            <div class="figuras_opciones">
+                <div class="figuras_opciones-datos">
+
+                    <h2>Resultados</h2>
+                    <div class="resultados">
+                        <div class="reultados_tipo">
+                            <h3>resultado del perimetro es</h3>
+                            <div class="resultado_tipo-texto">
+                                <span class="resultado_tipo-final"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="figuras.js">

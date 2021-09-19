@@ -1,5 +1,49 @@
 //console.group("Cuadrado del triángulo");
 
+const resultado = document.getElementsByClassName("resultado_tipo-final");
+
+const perimetro = document.getElementById("perimetro");
+const area = document.getElementById("area");
+
+const valorUsuario = document.getElementById("inputCuadrado");
+
+
+perimetro.addEventListener("click", mostrarP);
+area.addEventListener("click", mostrarA);
+
+
+
+
+function mostrarP() {
+    calcularPerimetro();
+}
+
+function mostrarA() {
+    calcularArea();
+}
+
+
+function calcularPerimetro() {
+    resultado[0].innerHTML = "";
+    const valor = valorUsuario.value;
+    const perimetro = perimentroCuadrado(valor);
+    resultado[0].innerHTML = perimetro + " cm";
+    console.log(perimetro);
+
+
+
+}
+
+function calcularArea() {
+
+    resultado[0].innerHTML = "";
+    const valor = valorUsuario.value;
+    const area = areaCuadrado(valor);
+    resultado[0].innerHTML = area + " cm2";
+    console.log(area);
+
+}
+
 function perimentroCuadrado(lado) {
     return lado * 4;
 }
@@ -7,6 +51,29 @@ function perimentroCuadrado(lado) {
 function areaCuadrado(lado) {
     return lado * lado;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // console.group("Cuadrado del triángulo");
@@ -35,3 +102,5 @@ function perimetroCirculo(radio) {
 function areaCirculo(radio) {
     return (radio * radio) * Math.PI;
 }
+
+//resultado
