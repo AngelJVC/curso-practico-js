@@ -207,15 +207,56 @@
         .contenedor {
             width: 100%;
             height: auto;
-            font-size: 12px;
+            font-size: 16px;
         }
         .figuras {
             max-width: 100%;
-            width: 95%;
-            font-size: 12px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .figuras_opciones {
+            width: 100%;
         }
         .figuras_opciones-datos {
             width: 100%;
-            font-size: 12px;
+            font-size: 16px;
+        }
+        .figuras_opciones-datos--formulario {
+            width: 100%;
+            flex-direction: column;
+        }
+        .figuras_opciones-datos--button {
+            width: 100%;
+            flex-direction: column;
+        }
+        .figuras_opciones-datos--button button {
+            width: 90%;
+        }
+        .figuras_opciones-datos--input {
+            width: 90%;
+        }
+        .figuras_opciones-datos {
+            width: 100%;
+        }
+        .figuras_opciones-datos span {
+            margin: 10px;
+            font: 1em sans-serif;
+        }
+        .resultados {
+            width: 100%;
+            font-size: 16px;
+        }
+        .reultados_tipo {
+            width: 90%;
+        }
+        .reultados_tipo span {
+            margin: 15px;
+            padding: 10px;
+        }
+        .resultado_tipo-texto {
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 15px;
+            font-size: 25px;
         }
     }
