@@ -1,6 +1,7 @@
 //console.group("Cuadrado del triángulo");
 
 const resultado = document.getElementsByClassName("resultado_tipo-final");
+const nombrefigura = document.getElementsByClassName("reultados_tipo-figura");
 
 const perimetro = document.getElementById("perimetro");
 const area = document.getElementById("area");
@@ -16,10 +17,12 @@ area.addEventListener("click", mostrarA);
 
 function mostrarP() {
     calcularPerimetro();
+    nombrefigura[0].innerHTML = "Perimetro";
 }
 
 function mostrarA() {
     calcularArea();
+    nombrefigura[0].innerHTML = "Area";
 }
 
 
